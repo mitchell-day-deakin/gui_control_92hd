@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/ble.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Control</h1>
+    <button onclick="ble.connect()">connect</button>
+    <button onclick="ble.disconnect()">disconnect</button>
+    <br><br>
+    <span>Time: </span><input type="number" name="time" id="time">
+    <br><br>
+    <div id="controlDiv">
+        <button id="forward">Forward</button>
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+        <button id="reverse">Reverse</button>
+    </div>
+    
+    <div id="msg"></div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
